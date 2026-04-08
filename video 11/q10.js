@@ -7,7 +7,7 @@
     let consonentCount = 0;
 
     inputString = inputString.toLowerCase();
-    inputString = inputString.replace(/ /g, '');
+    inputString = inputString.replace(/ /g, ''); //regular expressions
     console.log(inputString); 
     
     for(let i=0; i<inputString.length; i++){
