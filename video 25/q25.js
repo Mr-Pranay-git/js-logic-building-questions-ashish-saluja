@@ -7,13 +7,26 @@
     //  [8,9]]
 //  Javascript
 
-function transpose(){
-    arr1 = [[3,4,8], [5,6,9]]
+function transposeMatrix(inputArray){
+    const numberOfRows = inputArray.length
+    const numberOfColumns = inputArray[0].length
 
-    for(let i=0; i<=arr1.length; i++){
-        console.log(arr1[i]);   
-        
+    const result = [];
+
+    for (let i=0; i<numberOfRows; i++){
+        for (let j=0; j< numberOfColumns; j++){
+            // console.log(inputArray[i][j]);
+
+            if(!result[j]){
+                result[j] = [];
+            }
+            result[j][i]= inputArray[i][j]
+        }
     }
-}
 
-transpose()
+    return result
+}
+inputMatrix = [ [3,4,8],
+                [5,6,9] ]
+
+console.log(transposeMatrix(inputMatrix))
