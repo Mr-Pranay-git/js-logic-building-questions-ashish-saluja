@@ -19,3 +19,4 @@ function checkPerfectNum(number){
 }
 
 console.log(checkPerfectNum(28))
+>>>>>>> 6fb8238 (perfect number completed)
